@@ -3,11 +3,10 @@ using System.Text;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
-using Worldpay.Sdk;
 using Worldpay.Sdk.Enums;
 using Worldpay.Sdk.Models;
-using Newtonsoft.Json;
 using System.Collections.Generic;
+using Newtonsoft.Json;
 
 namespace Worldpay.Sdk.Examples
 {
@@ -53,7 +52,7 @@ namespace Worldpay.Sdk.Examples
 
             try
             {
-                custIdentifiers = JavaScriptConvert.DeserializeObject<Dictionary<string, string>>(form["customer-identifiers"]);
+                custIdentifiers = JsonConvert.DeserializeObject<Dictionary<string, string>>(form["customer-identifiers"]);
 
             }
             catch (Exception exc) { }
@@ -152,7 +151,7 @@ namespace Worldpay.Sdk.Examples
             ResponseOrderCode.Text = response.orderCode;
             ResponseToken.Text = response.token;
             ResponsePaymentStatus.Text = response.paymentStatus.ToString();
-            ResponseJson.Text = JavaScriptConvert.SerializeObject(response);
+            ResponseJson.Text = JsonConvert.SerializeObject(response);
             SuccessPanel.Visible = true;
         }
 

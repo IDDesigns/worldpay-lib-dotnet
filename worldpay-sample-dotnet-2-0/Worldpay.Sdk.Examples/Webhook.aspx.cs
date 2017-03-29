@@ -2,7 +2,6 @@
 using System.IO;
 using System.Web;
 using Worldpay.Sdk.Enums;
-using Worldpay.Sdk.Models;
 
 namespace Worldpay.Sdk.Examples
 {

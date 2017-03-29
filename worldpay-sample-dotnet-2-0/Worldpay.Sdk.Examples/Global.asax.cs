@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Configuration;
-using Configuration = Worldpay.Sdk.Configuration;
 
 namespace Worldpay.Sdk.Examples
 {

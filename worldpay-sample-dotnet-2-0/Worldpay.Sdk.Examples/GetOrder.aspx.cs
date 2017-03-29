@@ -2,8 +2,6 @@
 using System.Web.UI;
 using System.Web.UI.WebControls;
 using Newtonsoft.Json;
-using Worldpay.Sdk;
-using Worldpay.Sdk.Models;
 
 namespace Worldpay.Sdk.Examples
 {
@@ -28,7 +26,7 @@ namespace Worldpay.Sdk.Examples
             try
             {
                 var response = client.GetOrderService().FindOrder(orderCode);
-                ServerResponse.Text = JavaScriptConvert.SerializeObject(response);
+                ServerResponse.Text = JsonConvert.SerializeObject(response);
                 SuccessPanel.Visible = true;
             }
             catch (WorldpayException exc)
