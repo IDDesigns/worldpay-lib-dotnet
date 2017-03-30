@@ -1,15 +1,15 @@
 # worldpay-lib-dotnet
 
-This repository consists of four related projects:
-* worldpay-lib-dotnet-3-5 and worldpay-lib-dotnet-2-0, the SDKs for .NET 3.5+ and .NET 2.0
-* worldpay-sample-dotnet-3-5 and worldpay-sample-dotnet-2-0, the sample applications for the SDKs
+This repository consists of six related projects:
+* worldpay-lib-dotnet-4-5, worldpay-lib-dotnet-3-5 and worldpay-lib-dotnet-2-0, the SDKs for .NET 4.5+, .NET 3.5+ and .NET 2.0
+* worldpay-sample-dotnet-4-5,  worldpay-sample-dotnet-3-5 and worldpay-sample-dotnet-2-0, the sample applications for the SDKs
 
 Each of these is contained in a separate directory / VS solution.
 
-worldpay-lib-dotnet-3-5 & 2-0
+worldpay-lib-dotnet-4-5 & 3-5 & 2-0
 -------------------
 
-DotNet Library for Worldpay REST API (.NET 3.5+, .NET 2.0)
+DotNet Library for Worldpay REST API (.NET 4.5+,.NET 3.5+, .NET 2.0)
 
 ## Usage
 
@@ -47,7 +47,7 @@ try {
 }
 ```
 
-worldpay-sample-dotnet-3-5 & 2-0
+worldpay-sample-dotnet-4-5 & 3-5 & 2-0
 -------------------
 
 C# ASP .NET sample application which demonstrates integration with Worldpay API.
@@ -55,7 +55,7 @@ C# ASP .NET sample application which demonstrates integration with Worldpay API.
 ### Prerequisites
 
 - A .NET-enabled development environment, such as Visual Studio or SharpDevelop. These below instructions assume you're using Visual Studio.
-- .NET Framework 3.5
+- .NET Framework 4.5/3.5
 
 ### Instructions
 
